@@ -23,7 +23,7 @@ export class AppComponent implements OnDestroy, AfterViewInit {
       filter((clicks) => clicks.length === 2 )
     ).subscribe(()=> {
       this.timer.unsubscribe();
-      this.isEnable= false
+      this.isEnable = false
     })
   }
 
