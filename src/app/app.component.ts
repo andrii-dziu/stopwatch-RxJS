@@ -16,6 +16,7 @@ export class AppComponent implements OnDestroy, AfterViewInit {
   btnWait!: Subscription;
   isEnable: boolean = false;
   display: number = 0;
+  
   ngAfterViewInit() {
     this.btnWait = fromEvent(this.wait.nativeElement, 'click').
     pipe(
