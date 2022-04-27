@@ -25,7 +25,7 @@ export class AppComponent implements OnDestroy, AfterViewInit {
     ).subscribe(()=> {
       this.timer.unsubscribe();
       this.isEnable = false
-    })
+    });
   }
 
   ngOnDestroy() {
